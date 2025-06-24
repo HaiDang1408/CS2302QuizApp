@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="600.0" styleClass="Main" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.plhd.mavenproject3.QuestionController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="600.0" styleClass="Main" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.plhd.mavenproject3.QuestionController">
    <children>
       <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Subject" text="Quản lý câu hỏi" />
       <TextArea prefHeight="74.0" prefWidth="580.0" promptText="Nội dung câu hỏi" />
@@ -19,7 +19,7 @@
             <ComboBox prefWidth="150.0" promptText="Mức độ" />
          </children>
       </HBox>
-      <VBox prefHeight="101.0" prefWidth="580.0">
+      <VBox fx:id="vboxChoice" prefHeight="101.0" prefWidth="580.0">
          <children>
             <HBox prefHeight="48.0" prefWidth="580.0" styleClass="Main">
                <children>
@@ -35,6 +35,6 @@
             </HBox>
          </children>
       </VBox>
-      <Button mnemonicParsing="false" styleClass="Button" text="Thêm lựa chọn" />
+      <Button mnemonicParsing="false" onAction="#hanleMoreChoice" styleClass="Button" text="Thêm lựa chọn" />
    </children>
 </VBox>
